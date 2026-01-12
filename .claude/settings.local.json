@@ -1,0 +1,13 @@
+{
+  "enableAllProjectMcpServers": true,
+  "enabledMcpjsonServers": [
+    "playwright"
+  ],
+  "permissions": {
+    "allow": [
+      "Bash(node -e \"\nconst { Client } = require(''pg'');\nconst client = new Client({\n  connectionString: ''postgres://97a7d626fd8da783b0df4a473d089ac54884274f5f3ebb6664d3cd8852d0f0c0:sk_GnpyyVTFpRXqsevnX-Tnb@db.prisma.io:5432/postgres?sslmode=require''\n});\n\n(async () => {\n  try {\n    await client.connect();\n    \n    // Check projects table\n    const projects = await client.query(\\`\n      SELECT *\n      FROM projects \n      WHERE name ILIKE ''%portfoliosis%'' \n         OR path ILIKE ''%portfoliosis%''\n      ORDER BY created_at DESC\n    \\`);\n    \n    console.log(''=== PORTFOLIOSIS PROJECTS ==='');\n    console.log(JSON.stringify(projects.rows, null, 2));\n    \n    // Get any updates\n    if (projects.rows.length > 0) {\n      const projectIds = projects.rows.map(r => r.id);\n      const updates = await client.query(\\`\n        SELECT *\n        FROM project_updates \n        WHERE project_id = ANY($1)\n        ORDER BY created_at DESC\n        LIMIT 20\n      \\`, [projectIds]);\n      \n      console.log(''\\n=== PROJECT UPDATES ==='');\n      console.log(JSON.stringify(updates.rows, null, 2));\n    }\n    \n    await client.end();\n  } catch (err) {\n    console.error(''Error:'', err.message);\n    process.exit(1);\n  }\n})();\n\")"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
