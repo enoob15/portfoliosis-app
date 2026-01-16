@@ -1,38 +1,81 @@
-import { NextResponse } from 'next/server';
-import type { NextRequest } from 'next/server';
-import { createBrowserClient } from '@/lib/db/supabase';
+import { createServerClient } from '@supabase/ssr'
+import { NextResponse, type NextRequest } from 'next/server'
 
 export async function middleware(request: NextRequest) {
-  const res = NextResponse.next();
-  const supabase = createBrowserClient();
+  // 1. Safety Check: Verification of Environment Variables
+  const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL
+  const supabaseKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY
 
-  // Check if user is authenticated
+  if (!supabaseUrl || !supabaseKey) {
+    console.warn('Middleware: Missing Supabase Environment Variables. Skipping Auth Check.')
+    // Allow request to proceed to avoid 500 Error, but Auth will not work.
+    return NextResponse.next({
+      request: {
+        headers: request.headers,
+      },
+    })
+  }
+
+  // 2. Standard Auth Flow
+  let response = NextResponse.next({
+    request: {
+      headers: request.headers,
+    },
+  })
+
+  const supabase = createServerClient(
+    supabaseUrl,
+    supabaseKey,
+    {
+      cookies: {
+        getAll() {
+          return request.cookies.getAll()
+        },
+        setAll(cookiesToSet) {
+          cookiesToSet.forEach(({ name, value, options }) =>
+            request.cookies.set(name, value)
+          )
+          response = NextResponse.next({
+            request: {
+              headers: request.headers,
+            },
+          })
+          cookiesToSet.forEach(({ name, value, options }) =>
+            response.cookies.set(name, value, options)
+          )
+        },
+      },
+    }
+  )
+
   const {
-    data: { session },
-  } = await supabase.auth.getSession();
+    data: { user },
+  } = await supabase.auth.getUser()
 
   // Protected routes that require authentication
-  const protectedPaths = ['/dashboard'];
+  const protectedPaths = ['/dashboard']
   const isProtectedPath = protectedPaths.some((path) =>
     request.nextUrl.pathname.startsWith(path)
-  );
+  )
 
   // Redirect to login if accessing protected route without session
-  if (isProtectedPath && !session) {
-    const redirectUrl = new URL('/login', request.url);
-    redirectUrl.searchParams.set('redirectTo', request.nextUrl.pathname);
-    return NextResponse.redirect(redirectUrl);
+  if (isProtectedPath && !user) {
+    const redirectUrl = new URL('/login', request.url)
+    redirectUrl.searchParams.set('redirectTo', request.nextUrl.pathname)
+    return NextResponse.redirect(redirectUrl)
   }
 
   // Redirect to dashboard if accessing auth pages with active session
-  const authPaths = ['/login', '/signup'];
-  const isAuthPath = authPaths.some((path) => request.nextUrl.pathname.startsWith(path));
+  const authPaths = ['/login', '/signup']
+  const isAuthPath = authPaths.some((path) =>
+    request.nextUrl.pathname.startsWith(path)
+  )
 
-  if (isAuthPath && session) {
-    return NextResponse.redirect(new URL('/dashboard', request.url));
+  if (isAuthPath && user) {
+    return NextResponse.redirect(new URL('/dashboard', request.url))
   }
 
-  return res;
+  return response
 }
 
 export const config = {
@@ -46,4 +89,5 @@ export const config = {
      */
     '/((?!_next/static|_next/image|favicon.ico|.*\\.(?:svg|png|jpg|jpeg|gif|webp)$).*)',
   ],
-};
+}
+
