@@ -1,4 +1,4 @@
-import { createClient } from '@supabase/supabase-js';
+import { createBrowserClient as createClient } from '@supabase/ssr'
 
 /**
  * Supabase client for client-side operations
@@ -9,15 +9,10 @@ export function createBrowserClient() {
   const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
 
   if (!supabaseUrl || !supabaseAnonKey) {
-    throw new Error('Missing Supabase environment variables. Check .env.local');
+    console.warn('Missing Supabase environment variables. Check .env.local');
   }
 
-  return createClient(supabaseUrl, supabaseAnonKey, {
-    auth: {
-      persistSession: true,
-      autoRefreshToken: true,
-    },
-  });
+  return createClient(supabaseUrl || '', supabaseAnonKey || '');
 }
 
 /**
@@ -29,10 +24,10 @@ export function createServerClient() {
   const supabaseServiceRoleKey = process.env.SUPABASE_SERVICE_ROLE_KEY;
 
   if (!supabaseUrl || !supabaseServiceRoleKey) {
-    throw new Error('Missing Supabase environment variables. Check .env.local');
+    console.warn('Missing Supabase environment variables. Check .env.local');
   }
 
-  return createClient(supabaseUrl, supabaseServiceRoleKey, {
+  return createClient(supabaseUrl || '', supabaseServiceRoleKey || '', {
     auth: {
       persistSession: false,
       autoRefreshToken: false,
