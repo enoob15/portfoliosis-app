@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { createBrowserClient } from '@/lib/db/supabase';
+import { parseResume } from '@/app/actions/parse-resume';
 import { ResumeUpload } from '@/components/upload/ResumeUpload';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -66,6 +67,7 @@ export default function NewPortfolioPage() {
       const fileExt = file.name.split('.').pop();
       const fileName = `${user.id}/${Date.now()}.${fileExt}`;
 
+
       const { error: uploadError } = await supabase.storage
         .from('portfolios')
         .upload(fileName, file);
@@ -73,6 +75,17 @@ export default function NewPortfolioPage() {
       if (uploadError) {
         throw uploadError;
       }
+
+      // Parse resume text
+      const formData = new FormData();
+      formData.append('file', file);
+      const parseResult = await parseResume(formData);
+
+      if (!parseResult.success || !parseResult.data) {
+        console.warn('Resume parsing failed:', parseResult.error);
+        // We continue even if parsing fails, but maybe log it
+      }
+
 
       // Create portfolio record
       const { data: portfolio, error: createError } = await supabase
@@ -82,7 +95,7 @@ export default function NewPortfolioPage() {
           name: portfolioName,
           slug: slug,
           template_id: templateId,
-          resume_data: {
+          resume_data: parseResult.data || {
             file_path: fileName,
             file_name: file.name,
             uploaded_at: new Date().toISOString(),

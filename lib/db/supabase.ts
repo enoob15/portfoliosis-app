@@ -34,3 +34,6 @@ export function createServerClient() {
     },
   });
 }
+
+// createServerClient removed to avoid next/headers issue
+// use @/lib/db/supabase-server for server-side clients

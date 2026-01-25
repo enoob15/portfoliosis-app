@@ -6,7 +6,8 @@ import { createBrowserClient } from '@/lib/db/supabase';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
-import { PlusCircle, FileText, Eye, Settings, Trash2 } from 'lucide-react';
+import { PlusCircle, Eye, Settings, Trash2 } from 'lucide-react';
+import { OnboardingWizard } from '@/components/dashboard/OnboardingWizard';
 
 interface Portfolio {
   id: string;
@@ -23,10 +24,7 @@ interface Portfolio {
 export default function DashboardPage() {
   const [portfolios, setPortfolios] = useState<Portfolio[]>([]);
   const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    loadPortfolios();
-  }, []);
+  const [showUploader, setShowUploader] = useState(false);
 
   async function loadPortfolios() {
     const supabase = createBrowserClient();
@@ -40,6 +38,10 @@ export default function DashboardPage() {
     }
     setLoading(false);
   }
+
+  useEffect(() => {
+    loadPortfolios();
+  }, []);
 
   async function deletePortfolio(id: string) {
     if (!confirm('Are you sure you want to delete this portfolio?')) {
@@ -74,33 +76,19 @@ export default function DashboardPage() {
             Create and manage your professional portfolio websites
           </p>
         </div>
-        <Link href="/dashboard/portfolios/new">
-          <Button size="lg">
-            <PlusCircle className="mr-2 h-5 w-5" />
-            Create Portfolio
-          </Button>
-        </Link>
+        <Button size="lg" onClick={() => setShowUploader(!showUploader)}>
+          <PlusCircle className="mr-2 h-5 w-5" />
+          {showUploader ? 'Cancel' : 'Create Portfolio'}
+        </Button>
       </div>
 
-      {portfolios.length === 0 ? (
-        <Card className="text-center py-12">
-          <CardContent>
-            <FileText className="mx-auto h-12 w-12 text-gray-400 mb-4" />
-            <h3 className="text-lg font-semibold text-gray-900 mb-2">
-              No portfolios yet
-            </h3>
-            <p className="text-gray-600 mb-6">
-              Get started by creating your first portfolio from your resume
-            </p>
-            <Link href="/dashboard/portfolios/new">
-              <Button>
-                <PlusCircle className="mr-2 h-5 w-5" />
-                Create Your First Portfolio
-              </Button>
-            </Link>
-          </CardContent>
-        </Card>
-      ) : (
+      {(showUploader || portfolios.length === 0) && (
+        <div className="mb-8">
+          <OnboardingWizard />
+        </div>
+      )}
+
+      {portfolios.length > 0 && !showUploader && (
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {portfolios.map((portfolio) => (
             <Card key={portfolio.id} className="hover:shadow-lg transition-shadow">
@@ -117,8 +105,8 @@ export default function DashboardPage() {
                       portfolio.status === 'published'
                         ? 'default'
                         : portfolio.status === 'draft'
-                        ? 'secondary'
-                        : 'outline'
+                          ? 'secondary'
+                          : 'outline'
                     }
                   >
                     {portfolio.status}

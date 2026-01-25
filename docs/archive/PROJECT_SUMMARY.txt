@@ -1,0 +1,103 @@
+# Portfoliosis - Project Summary
+
+**Technical Lead**: Devon Cross, CTO
+**Date**: January 15, 2026
+**Status**: Phase 2 (AI Engine) - Week 4 Start
+
+---
+
+## 🚀 Current Status: Weeks 2 & 3 Complete
+
+**Milestones Achieved (Jan 11, 2026):**
+- ✅ **Authentication**: Full login/signup flow with Email/Password & Google OAuth.
+- ✅ **Database**: Supabase schema deployed with Row-Level Security (RLS).
+- ✅ **Dashboard**: Portfolio management interface with draft/published states.
+- ✅ **File Upload**: Secure drag-and-drop resume upload (PDF/DOCX) to Supabase Storage.
+- ✅ **Infrastructure**: Next.js 15 + Shadcn UI + Supabase fully integrated.
+
+---
+
+## 📋 What We Have Built
+
+### 1. Core Platform Application ✅
+- **Authentication**: Secure auth flow using Supabase Auth (Middleware protected routes).
+- **Dashboard**: `app/(dashboard)` layout with navigation, user settings, and portfolio lists.
+- **Wizard**: 3-step creation flow (Details -> Template -> Upload).
+- **Storage**: RLS-protected storage bucket for user resumes.
+
+### 2. Database Architecture ✅
+- **Tables**: `users`, `portfolios`, `ai_jobs`, `templates`, `portfolio_versions`.
+- **Security**: Robust RLS policies ensuring users only access their own data.
+- **Triggers**: Auto-updating timestamps and user management.
+
+### 3. Type System & Components ✅
+- **Types**: Comprehensive TypeScript definitions in `types/`.
+- **UI**: Full suite of accessible Shadcn UI components.
+- **Upload**: `ResumeUpload` component with validation (type/size).
+
+---
+
+## 📅 Next Steps (Phase 2: AI Engine)
+
+### Assigned to: James Chen (AI Lead) + Devon Cross (CTO)
+
+**Goal**: Transform uploaded resumes into structured data and generate portfolio content.
+
+**Immediate Tasks (Week 4):**
+1.  **Resume Parsing**: Implement `pdf-parse` and `mammoth` to extract text from uploads.
+2.  **AI Orchestrator**: Build the service to route requests to LLMs (OpenAI/Anthropic/Gemini).
+3.  **Prompt Engineering**: Design prompts for structure extraction and content enhancement.
+4.  **Profile Generation**: Map extracted data to the `Profile` type structure.
+
+**Deliverable**: Upload a resume -> View extracted & AI-enhanced profile data.
+
+---
+
+## ⚠️ Critical Risks & Mitigations
+
+### 🔴 HIGH RISK: AI Cost & Latency
+**Status**: Monitoring
+**Mitigation**:
+- Using "Flash" and "Mini" model variants for bulk processing.
+- Implementing aggressive caching for parsing results.
+- **Action**: Verify API key quotas before starting high-volume testing.
+
+### 🟡 MEDIUM RISK: Resume Parsing Accuracy
+**Status**: Active
+**Mitigation**:
+- Hybrid approach: Rule-based parsing for structure + LLM for semantic understanding.
+- User verification step (Human-in-the-loop) before generating the final site.
+
+---
+
+## 🛠️ Technical Decisions (Updated)
+
+### ✅ Supabase for Everything
+**Decision**: Consolidated Auth, DB, and Storage into Supabase.
+**Result**: Simplified architecture, zero-config RLS security, free tier sufficiency for MVP.
+
+### ✅ Server-Side Operations
+**Decision**: Heavy use of Next.js Server Actions.
+**Result**: Reduced client-side JavaScript, improved security (secrets stay on server), faster initial loads.
+
+---
+
+## 📈 Project Health
+
+### ✅ GREEN (On Track)
+- Authentication & Database foundation is solid.
+- Dashboard UX is implemented and functional.
+- Documentation is up-to-date.
+
+### 🟡 YELLOW (Monitor)
+- **Deployment**: Vercel deployment needs final verification of environment variables.
+- **AI Keys**: Need to ensure API keys are provisioned in `.env.local`.
+
+---
+
+## Reference Links
+
+- **Setup Guide**: `SETUP_INSTRUCTIONS.md`
+- **Status Log**: `PROJECT_STATUS.md`
+- **Full Architecture**: `docs/ARCHITECTURE.md`
+- **Week 2/3 Detail**: `../../PORTFOLIOSIS_WEEK_2-3_COMPLETE.md`
