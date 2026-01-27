@@ -68,6 +68,7 @@ export async function generatePortfolioContent(
       throw new Error('Invalid content type');
   }
 
+
   try {
     // Determine which provider to use based on available API keys
     let preferredModel: 'gpt4' | 'claude' | 'gemini' = 'gpt4';
@@ -77,6 +78,13 @@ export async function generatePortfolioContent(
       preferredModel = 'gemini';
     }
 
+    console.log('[AI Generation] Using model:', preferredModel);
+    console.log('[AI Generation] API keys available:', {
+      openai: !!apiKeys.openai,
+      anthropic: !!apiKeys.anthropic,
+      google: !!apiKeys.google
+    });
+
     // Use available AI provider for content generation
     const result = await orchestrator.generateContent(
       prompt,
@@ -84,14 +92,36 @@ export async function generatePortfolioContent(
       preferredModel
     );
 
+    console.log('[AI Generation] Result received, length:', result.content.length);
+
     // Parse JSON response
     const jsonStr = result.content.replace(/```json\n?|\n?```/g, '').trim();
-    return JSON.parse(jsonStr);
-  } catch (error) {
-    console.error('AI generation error:', error);
-    throw new Error('Failed to generate content. Please try again.');
+    const parsed = JSON.parse(jsonStr);
+
+    console.log('[AI Generation] Successfully parsed JSON');
+    return parsed;
+  } catch (error: any) {
+    console.error('[AI Generation] Error details:', {
+      message: error.message,
+      stack: error.stack,
+      name: error.name
+    });
+
+    // Provide more specific error messages
+    if (error.message?.includes('API key')) {
+      throw new Error('AI service configuration error. Please contact support.');
+    }
+    if (error.message?.includes('rate limit')) {
+      throw new Error('AI service is temporarily busy. Please try again in a moment.');
+    }
+    if (error.message?.includes('JSON')) {
+      throw new Error('AI generated invalid response. Please try again.');
+    }
+
+    throw new Error(`Failed to generate content: ${error.message || 'Unknown error'}`);
   }
 }
+
 
 /**
  * Save manual portfolio draft to database
