@@ -26,7 +26,11 @@ export async function parseResume(formData: FormData): Promise<ParseResult> {
     ) {
       text = await parseDocx(buffer);
     } else {
-      return { success: false, error: 'Unsupported file type. Please upload PDF or DOCX.' };
+      const isLegacyDoc = file.type === 'application/msword' || file.name.endsWith('.doc');
+      const errorMsg = isLegacyDoc 
+        ? 'Legacy .doc files are not supported. Please save as .docx or PDF and try again.'
+        : 'Unsupported file type. Please upload PDF or DOCX.';
+      return { success: false, error: errorMsg };
     }
 
     if (!text || text.trim().length === 0) {
