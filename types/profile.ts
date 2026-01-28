@@ -7,6 +7,7 @@ export interface ContactInfo {
   phone?: string
   location?: string
   website?: string
+  profileImageUrl?: string
   social?: SocialLinks
 }
 

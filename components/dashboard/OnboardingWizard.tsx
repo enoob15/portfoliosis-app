@@ -2,13 +2,17 @@
 'use client';
 
 import { useState } from 'react';
+import { useRouter } from 'next/navigation';
 import { OnboardingCards } from './OnboardingCards';
 import { ResumeUploader } from './ResumeUploader';
+import { ManualPortfolioProvider } from '@/contexts/ManualPortfolioContext';
+import { ManualCreationWizard } from '@/components/portfolio/ManualCreationWizard';
 import { Button } from '@/components/ui/button';
 import { ArrowLeft } from 'lucide-react';
 
 export function OnboardingWizard() {
     const [step, setStep] = useState<'selection' | 'resume' | 'linkedin' | 'manual' | 'links'>('selection');
+    const router = useRouter();
 
     const handleBack = () => {
         setStep('selection');
@@ -49,10 +53,11 @@ export function OnboardingWizard() {
             )}
 
             {step === 'manual' && (
-                <div className="max-w-md mx-auto text-center py-12">
-                    <p className="text-lg font-medium">Manual Entry coming soon</p>
-                    <p className="text-gray-500">For now, try uploading a resume to get started.</p>
-                </div>
+                <ManualPortfolioProvider>
+                    <ManualCreationWizard onComplete={(portfolioId) => {
+                        router.push(`/dashboard/portfolios/${portfolioId}/edit`);
+                    }} />
+                </ManualPortfolioProvider>
             )}
 
             {step === 'links' && (

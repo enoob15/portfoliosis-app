@@ -1,0 +1,17 @@
+Main Handoff Document:
+
+
+…\Projects\portfoliosis-app\HANDOFF_MANUAL_CREATION.md
+Supporting Documentation:
+
+
+c:\GitHub\Projects\portfoliosis-app.agent\workflows\manual-portfolio-creation.md
+
+…\portfoliosis-app\docs\MANUAL_CREATION_PLAN.md
+
+…\portfoliosis-app\docs\MANUAL_CREATION_QUICKSTART.md
+Design Mockups: (Referenced in the handoff doc)
+
+Manual Portfolio Wizard UI
+AI Content Generator Modal
+Image Upload Interface
