@@ -9,10 +9,10 @@
 ## 🌐 Production URLs
 
 ### Primary Production URL
-**https://portfoliosis-oaseotnsx-boones-projects-4080c510.vercel.app**
+**https://portfoliosys-oaseotnsx-boones-projects-4080c510.vercel.app**
 
 ### Vercel Dashboard
-**Inspect:** https://vercel.com/boones-projects-4080c510/portfoliosis-app/6QHXLJWPfNzJVfmRLK1d9HvsfqPw
+**Inspect:** https://vercel.com/boones-projects-4080c510/portfoliosys-app/6QHXLJWPfNzJVfmRLK1d9HvsfqPw
 
 ---
 
@@ -303,9 +303,9 @@
 
 **PRODUCTION DEPLOYMENT: SUCCESSFUL** ✅
 
-The Portfoliosis Manual Portfolio Creation feature is now live in production and ready for users!
+The Portfoliosys Manual Portfolio Creation feature is now live in production and ready for users!
 
-**Production URL:** https://portfoliosis-oaseotnsx-boones-projects-4080c510.vercel.app
+**Production URL:** https://portfoliosys-oaseotnsx-boones-projects-4080c510.vercel.app
 
 ---
 

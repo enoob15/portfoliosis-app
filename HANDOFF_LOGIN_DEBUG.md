@@ -4,12 +4,12 @@
 **Status:** ⚠️ Critical Issue - Production Login Failed
 
 ## Context
-We successfully verified that `https://portfoliosis.boone51.com` is live and serving content. We then created a test admin account to verify the end-to-end functionality. While the user creation script reported success, the actual login flow on the production site **failed to redirect** (stayed on `/login`).
+We successfully verified that `https://portfoliosys.boone51.com` is live and serving content. We then created a test admin account to verify the end-to-end functionality. While the user creation script reported success, the actual login flow on the production site **failed to redirect** (stayed on `/login`).
 
 ## Current State
-1.  **Site Accessibility**: ✅ LIVE (`https://portfoliosis.boone51.com`)
+1.  **Site Accessibility**: ✅ LIVE (`https://portfoliosys.boone51.com`)
 2.  **Test Account Configured**:
-    -   **Email**: `admin@portfoliosis.com`
+    -   **Email**: `admin@portfoliosys.com`
     -   **Password**: `admintest`
     -   **User ID**: `df43d5d5-0d91-47b1-93a2-b27f270d282a`
     -   **Method**: Created via `scripts/create-test-user.js` using `.env.local` credentials.

@@ -8,7 +8,7 @@ This document describes the state management infrastructure for the Manual Portf
 
 ### 1. `contexts/ManualPortfolioContext.tsx`
 **Status:** ✅ Implemented
-**Location:** `C:\GitHub\Projects\portfoliosis-app\contexts\ManualPortfolioContext.tsx`
+**Location:** `C:\GitHub\Projects\portfoliosys-app\contexts\ManualPortfolioContext.tsx`
 
 **Features Implemented:**
 - ✅ React Context with useReducer for state management
@@ -46,7 +46,7 @@ This document describes the state management infrastructure for the Manual Portf
 
 ### 2. `hooks/useManualPortfolio.ts`
 **Status:** ✅ Implemented
-**Location:** `C:\GitHub\Projects\portfoliosis-app\hooks\useManualPortfolio.ts`
+**Location:** `C:\GitHub\Projects\portfoliosys-app\hooks\useManualPortfolio.ts`
 
 **Features Implemented:**
 - ✅ Simplified API for components
@@ -137,7 +137,7 @@ This document describes the state management infrastructure for the Manual Portf
 
 ### 3. `lib/validation/portfolio-schema.ts`
 **Status:** ✅ Implemented
-**Location:** `C:\GitHub\Projects\portfoliosis-app\lib\validation\portfolio-schema.ts`
+**Location:** `C:\GitHub\Projects\portfoliosys-app\lib\validation\portfolio-schema.ts`
 
 **Features Implemented:**
 - ✅ Zod schemas for all form sections
@@ -549,7 +549,7 @@ export function ManualCreationWizard() {
 ## File Locations
 
 ```
-portfoliosis-app/
+portfoliosys-app/
 ├── contexts/
 │   └── ManualPortfolioContext.tsx     ✅ Core state management
 ├── hooks/

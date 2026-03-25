@@ -1,10 +1,10 @@
-# Portfoliosis
+# Portfoliosys
 
 AI-powered portfolio generation platform that transforms resumes and professional data into stunning, deployable portfolio websites in minutes.
 
 ## Vision
 
-Traditional portfolio builders are limited by templates and manual data entry. Portfoliosis leverages cutting-edge AI technology to analyze your professional experience, extract insights, and generate personalized portfolio websites that truly represent your unique value. Our multi-model AI ensemble ensures accuracy and quality beyond what single-model competitors can achieve.
+Traditional portfolio builders are limited by templates and manual data entry. Portfoliosys leverages cutting-edge AI technology to analyze your professional experience, extract insights, and generate personalized portfolio websites that truly represent your unique value. Our multi-model AI ensemble ensures accuracy and quality beyond what single-model competitors can achieve.
 
 **Core Promise**: Upload your resume, connect your professional profiles, and get a production-ready portfolio website in under 5 minutes.
 
@@ -83,8 +83,8 @@ Our competitive advantage: **three AI models working together** to enhance your 
 
 ```bash
 # Clone the repository
-git clone https://github.com/boone51/portfoliosis.git
-cd portfoliosis
+git clone https://github.com/boone51/portfoliosys.git
+cd portfoliosys
 
 # Install dependencies
 npm install
@@ -105,7 +105,7 @@ Open [http://localhost:3000](http://localhost:3000) and start building portfolio
 ## Project Structure
 
 ```
-Portfoliosis/
+Portfoliosys/
 ├── src/
 │   ├── app/                    # Next.js App Router pages and API routes
 │   │   ├── (auth)/            # Authentication pages (login, signup)
@@ -292,9 +292,9 @@ MIT License - See [LICENSE](./LICENSE) for details
 
 ## Contact
 
-- **GitHub**: [github.com/boone51/portfoliosis](https://github.com/boone51/portfoliosis)
-- **Website**: [portfoliosis.com](https://portfoliosis.com) (coming soon)
-- **Email**: team@portfoliosis.com
+- **GitHub**: [github.com/boone51/portfoliosys](https://github.com/boone51/portfoliosys)
+- **Website**: [portfoliosys.com](https://portfoliosys.com) (coming soon)
+- **Email**: team@portfoliosys.com
 
 ---
 

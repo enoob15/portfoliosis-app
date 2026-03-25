@@ -1,4 +1,4 @@
-# Portfoliosis - Setup Instructions
+# Portfoliosys - Setup Instructions
 
 **Created:** 2026-01-11
 **Status:** Week 2 & Week 3 Implementation Complete ✅
@@ -34,7 +34,7 @@
 
 1. Go to [supabase.com](https://supabase.com) and create account
 2. Click "New Project"
-   - **Project name:** `portfoliosis-dev`
+   - **Project name:** `portfoliosys-dev`
    - **Database password:** Generate strong password (save it!)
    - **Region:** Choose closest to your location
    - Wait 2-3 minutes for initialization
@@ -50,7 +50,7 @@
 
 1. Copy the example environment file:
    ```bash
-   cd C:\GitHub\portfoliosis-app
+   cd C:\GitHub\portfoliosys-app
    copy .env.example .env.local
    ```
 
@@ -75,7 +75,7 @@
 
 2. Copy the entire contents of:
    ```
-   C:\GitHub\portfoliosis-app\supabase\migrations\20260111_initial_schema.sql
+   C:\GitHub\portfoliosys-app\supabase\migrations\20260111_initial_schema.sql
    ```
 
 3. Paste into SQL Editor and click **Run**
@@ -101,7 +101,7 @@ If it doesn't exist, create it manually:
 ### Step 5: Install Dependencies
 
 ```bash
-cd C:\GitHub\portfoliosis-app
+cd C:\GitHub\portfoliosys-app
 npm install
 ```
 
@@ -151,7 +151,7 @@ The app will be available at: **http://localhost:3000**
 ## 📁 Project Structure
 
 ```
-portfoliosis-app/
+portfoliosys-app/
 ├── app/
 │   ├── (auth)/                    # Auth pages
 │   │   ├── login/page.tsx        ✅ Email/password + Google OAuth

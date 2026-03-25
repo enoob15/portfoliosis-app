@@ -11,7 +11,7 @@
 
 ### 1. Fix the Wizard Bug (30 seconds)
 ```bash
-cd c:\GitHub\Projects\portfoliosis-app
+cd c:\GitHub\Projects\portfoliosys-app
 del components\portfolio\ManualCreationWizard.tsx
 ren components\portfolio\ManualCreationWizard.fixed.tsx ManualCreationWizard.tsx
 ```

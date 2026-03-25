@@ -1,4 +1,4 @@
-# Portfoliosis - Master Product Requirements Document (PRD)
+# Portfoliosys - Master Product Requirements Document (PRD)
 
 **Version:** 1.0
 **Date:** January 16, 2026
@@ -8,7 +8,7 @@
 
 ## 1. Executive Summary
 
-Portfoliosis is a next-generation AI portfolio builder that transforms resumes and professional data (LinkedIn, GitHub) into stunning, personalized portfolio websites. Unlike simple template wrappers, it uses a multi-model AI ensemble to extract deep context, generate compelling narratives, and optimize for both human readers and ATS systems.
+Portfoliosys is a next-generation AI portfolio builder that transforms resumes and professional data (LinkedIn, GitHub) into stunning, personalized portfolio websites. Unlike simple template wrappers, it uses a multi-model AI ensemble to extract deep context, generate compelling narratives, and optimize for both human readers and ATS systems.
 
 ### Core Value Proposition
 *   **Deep Context**: "Understand me, don't just copy my resume."

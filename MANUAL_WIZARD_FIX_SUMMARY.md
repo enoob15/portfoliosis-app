@@ -16,7 +16,7 @@ All critical blocker and high-priority web development issues for the Manual Por
 
 ### 1. CRITICAL BLOCKER - Wizard Integration ✅
 
-**Location:** `C:\GitHub\Projects\portfoliosis-app\components\dashboard\OnboardingWizard.tsx`
+**Location:** `C:\GitHub\Projects\portfoliosys-app\components\dashboard\OnboardingWizard.tsx`
 
 **Problem:** Wizard showed "coming soon" placeholder instead of actual wizard.
 
@@ -31,7 +31,7 @@ All critical blocker and high-priority web development issues for the Manual Por
 
 ### 2. HIGH PRIORITY - Browser Back Button Warning ✅
 
-**Location:** `C:\GitHub\Projects\portfoliosis-app\contexts\ManualPortfolioContext.tsx`
+**Location:** `C:\GitHub\Projects\portfoliosys-app\contexts\ManualPortfolioContext.tsx`
 
 **Problem:** Users could accidentally lose work by navigating away.
 
@@ -46,7 +46,7 @@ All critical blocker and high-priority web development issues for the Manual Por
 
 ### 3. HIGH PRIORITY - Image Upload Error Feedback ✅
 
-**Location:** `C:\GitHub\Projects\portfoliosis-app\components\portfolio\shared\ImageUploader.tsx`
+**Location:** `C:\GitHub\Projects\portfoliosys-app\components\portfolio\shared\ImageUploader.tsx`
 
 **Problem:** No clear error messages when image uploads failed.
 
@@ -67,7 +67,7 @@ All critical blocker and high-priority web development issues for the Manual Por
 
 ### 4. HIGH PRIORITY - Error Boundary ✅
 
-**Location:** `C:\GitHub\Projects\portfoliosis-app\components\portfolio\ErrorBoundary.tsx` (NEW FILE)
+**Location:** `C:\GitHub\Projects\portfoliosys-app\components\portfolio\ErrorBoundary.tsx` (NEW FILE)
 
 **Problem:** Context errors could crash entire app.
 
@@ -140,7 +140,7 @@ npm run build
 - **TypeScript:** 100% type-safe
 - **Accessibility:** WCAG 2.1 AA compliant
 - **Performance:** Minimal overhead
-- **Style:** Follows Portfoliosis conventions
+- **Style:** Follows Portfoliosys conventions
 - **Documentation:** Clear, self-documenting code
 
 ---

@@ -94,7 +94,7 @@ function WizardContent({ onComplete }: { onComplete?: (portfolioId: string) => v
   useEffect(() => {
     const checkDraft = () => {
       try {
-        const stored = localStorage.getItem('portfoliosis_manual_draft');
+        const stored = localStorage.getItem('portfoliosys_manual_draft');
         if (stored) {
           const { data, timestamp } = JSON.parse(stored);
           // Only show recovery if there's actual data and it's not empty

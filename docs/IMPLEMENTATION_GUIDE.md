@@ -1,15 +1,15 @@
-# Portfoliosis Implementation Guide
+# Portfoliosys Implementation Guide
 
 **CTO Technical Brief - Devon Cross**
 **Date**: December 25, 2025
-**Project**: Portfoliosis AI Portfolio Builder
+**Project**: Portfoliosys AI Portfolio Builder
 **Timeline**: 16 weeks to MVP launch
 
 ---
 
 ## Executive Summary
 
-This guide provides concrete implementation instructions for the Portfoliosis development team. It breaks down the 16-week roadmap into weekly sprints with specific deliverables, technical decisions, and team assignments.
+This guide provides concrete implementation instructions for the Portfoliosys development team. It breaks down the 16-week roadmap into weekly sprints with specific deliverables, technical decisions, and team assignments.
 
 **Current Status**: Phase 1 foundation complete (Day 1)
 **Next Steps**: Supabase setup, authentication, database schema
@@ -319,7 +319,7 @@ export default function LoginPage() {
     <div className="flex min-h-screen items-center justify-center">
       <Card className="w-full max-w-md">
         <CardHeader>
-          <CardTitle>Welcome to Portfoliosis</CardTitle>
+          <CardTitle>Welcome to Portfoliosys</CardTitle>
           <CardDescription>Sign in to your account</CardDescription>
         </CardHeader>
         <CardContent>

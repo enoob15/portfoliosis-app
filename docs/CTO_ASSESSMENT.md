@@ -1,4 +1,4 @@
-# TECHNICAL ASSESSMENT & VISION - Portfoliosis
+# TECHNICAL ASSESSMENT & VISION - Portfoliosys
 ## By Devon Cross, CTO - December 25, 2025
 
 ## Architecture Validation: APPROVED ✅

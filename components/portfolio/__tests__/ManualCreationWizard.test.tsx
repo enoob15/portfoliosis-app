@@ -207,7 +207,7 @@ describe('ManualCreationWizard', () => {
         timestamp: new Date().toISOString(),
       }
 
-      localStorage.setItem('portfoliosis_manual_draft', JSON.stringify(draftData))
+      localStorage.setItem('portfoliosys_manual_draft', JSON.stringify(draftData))
 
       render(<ManualCreationWizard />)
 
@@ -227,7 +227,7 @@ describe('ManualCreationWizard', () => {
         timestamp: new Date().toISOString(),
       }
 
-      localStorage.setItem('portfoliosis_manual_draft', JSON.stringify(draftData))
+      localStorage.setItem('portfoliosys_manual_draft', JSON.stringify(draftData))
 
       render(<ManualCreationWizard />)
 
@@ -247,7 +247,7 @@ describe('ManualCreationWizard', () => {
         timestamp: new Date().toISOString(),
       }
 
-      localStorage.setItem('portfoliosis_manual_draft', JSON.stringify(draftData))
+      localStorage.setItem('portfoliosys_manual_draft', JSON.stringify(draftData))
 
       render(<ManualCreationWizard />)
 
@@ -272,7 +272,7 @@ describe('ManualCreationWizard', () => {
         timestamp: new Date().toISOString(),
       }
 
-      localStorage.setItem('portfoliosis_manual_draft', JSON.stringify(draftData))
+      localStorage.setItem('portfoliosys_manual_draft', JSON.stringify(draftData))
 
       render(<ManualCreationWizard />)
 

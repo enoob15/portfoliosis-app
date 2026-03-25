@@ -282,7 +282,7 @@ describe('ManualPortfolioContext', () => {
         result.current.reset()
       })
 
-      expect(localStorage.removeItem).toHaveBeenCalledWith('portfoliosis_manual_draft')
+      expect(localStorage.removeItem).toHaveBeenCalledWith('portfoliosys_manual_draft')
     })
   })
 

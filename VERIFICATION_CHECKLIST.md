@@ -94,7 +94,7 @@ All files successfully created/modified:
 - [x] Efficient re-renders
 
 ### Code Style
-- [x] Follows Portfoliosis conventions
+- [x] Follows Portfoliosys conventions
 - [x] Consistent naming
 - [x] Clear variable names
 - [x] Self-documenting code

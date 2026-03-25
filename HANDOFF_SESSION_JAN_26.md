@@ -12,7 +12,7 @@
 
 ## 🛠️ Work Completed
 1.  **Hostinger Account Created:**
-    *   The user created `noreply-portfoliosis@boone51.com` on Hostinger.
+    *   The user created `noreply-portfoliosys@boone51.com` on Hostinger.
     *   User holds the password for this account.
 
 2.  **Automation Scripts Created:**
@@ -25,7 +25,7 @@ The setup is **90% complete**. The final configuration needs to be saved in the 
 1.  **Run the Configuration Script:**
     Execute the following command to open the browser and auto-fill the SMTP details:
     ```powershell
-    node "c:\GitHub\Projects\portfoliosis-app\scripts\setup-smtp-gui.js"
+    node "c:\GitHub\Projects\portfoliosys-app\scripts\setup-smtp-gui.js"
     ```
     *   *Action:* Enter the Hostinger password when prompted, review the filled form in the browser, and click **Save**.
 
@@ -34,14 +34,14 @@ The setup is **90% complete**. The final configuration needs to be saved in the 
     ```powershell
     node scripts/trigger-verification-email.js your-personal-email@example.com
     ```
-    *   *Success Criteria:* You receive an email from `noreply-portfoliosis@boone51.com`.
+    *   *Success Criteria:* You receive an email from `noreply-portfoliosys@boone51.com`.
 
 ## 📂 Configuration Details (Reference)
-*   **Sender Email:** `noreply-portfoliosis@boone51.com`
-*   **Sender Name:** `Portfoliosis`
+*   **Sender Email:** `noreply-portfoliosys@boone51.com`
+*   **Sender Name:** `Portfoliosys`
 *   **Host:** `smtp.hostinger.com`
 *   **Port:** `465` (SSL)
-*   **Username:** `noreply-portfoliosis@boone51.com`
+*   **Username:** `noreply-portfoliosys@boone51.com`
 
 ## ⚠️ Notes for Next Session
 *   **Check Production Login:** Once email is verified, ensure that the login redirect issue (documented in `HANDOFF_LOGIN_DEBUG.md`) does not persist for the new user.

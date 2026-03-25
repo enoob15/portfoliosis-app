@@ -1,6 +1,6 @@
-# Portfoliosis - Quick Start (Automated Setup)
+# Portfoliosys - Quick Start (Automated Setup)
 
-**Get Portfoliosis running in 5 minutes!** 🚀
+**Get Portfoliosys running in 5 minutes!** 🚀
 
 Everything is automated. You just need to provide your Supabase credentials.
 
@@ -34,7 +34,7 @@ npm run dev
 ### Step 1: Install Dependencies
 
 ```bash
-cd C:\GitHub\portfoliosis-app
+cd C:\GitHub\portfoliosys-app
 npm install
 ```
 
@@ -43,7 +43,7 @@ npm install
 1. Go to [supabase.com](https://supabase.com)
 2. Create account (or log in)
 3. Click **"New Project"**
-   - Name: `portfoliosis-dev`
+   - Name: `portfoliosys-dev`
    - Password: Generate strong password (save it!)
    - Region: Choose closest to you
    - Wait 2-3 minutes for setup
@@ -190,7 +190,7 @@ setup.bat               # Full automated setup
 ## File Structure (Setup Files)
 
 ```
-portfoliosis-app/
+portfoliosys-app/
 ├── setup.bat                      # Windows one-command setup
 ├── QUICKSTART.md                  # This file
 ├── SETUP_INSTRUCTIONS.md          # Detailed manual setup guide
@@ -313,7 +313,7 @@ Then paste in Supabase SQL Editor
 
 **Documentation:**
 - Full setup guide: `SETUP_INSTRUCTIONS.md`
-- Project summary: `PORTFOLIOSIS_WEEK_2-3_COMPLETE.md`
+- Project summary: `PORTFOLIOSYS_WEEK_2-3_COMPLETE.md`
 
 **Supabase Resources:**
 - Dashboard: https://supabase.com/dashboard

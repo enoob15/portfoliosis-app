@@ -34,7 +34,7 @@ hooks/
 ## Components Implemented
 
 ### 1. ManualCreationWizard.tsx
-**Location:** `c:\GitHub\Projects\portfoliosis-app\components\portfolio\ManualCreationWizard.tsx`
+**Location:** `c:\GitHub\Projects\portfoliosys-app\components\portfolio\ManualCreationWizard.tsx`
 
 **Features:**
 - 6-step wizard navigation
@@ -65,12 +65,12 @@ interface ManualCreationWizardProps {
 **Fix Command:**
 ```bash
 # On Windows
-del c:\GitHub\Projects\portfoliosis-app\components\portfolio\ManualCreationWizard.tsx
-rename c:\GitHub\Projects\portfoliosis-app\components\portfolio\ManualCreationWizard.fixed.tsx ManualCreationWizard.tsx
+del c:\GitHub\Projects\portfoliosys-app\components\portfolio\ManualCreationWizard.tsx
+rename c:\GitHub\Projects\portfoliosys-app\components\portfolio\ManualCreationWizard.fixed.tsx ManualCreationWizard.tsx
 ```
 
 ### 2. ProgressIndicator.tsx
-**Location:** `c:\GitHub\Projects\portfoliosis-app\components\portfolio\shared\ProgressIndicator.tsx`
+**Location:** `c:\GitHub\Projects\portfoliosys-app\components\portfolio\shared\ProgressIndicator.tsx`
 
 **Features:**
 - Visual representation of 6 steps
@@ -103,7 +103,7 @@ interface Step {
 - Progress bar: Shows percentage completion
 
 ### 3. FormField.tsx
-**Location:** `c:\GitHub\Projects\portfoliosis-app\components\portfolio\shared\FormField.tsx`
+**Location:** `c:\GitHub\Projects\portfoliosys-app\components\portfolio\shared\FormField.tsx`
 
 **Features:**
 - Reusable form field wrapper
@@ -280,8 +280,8 @@ The wizard uses `ManualPortfolioProvider` which provides:
 1. **Immediate:** Fix ManualCreationWizard.tsx import order
    ```bash
    # Replace the buggy file with the fixed version
-   del c:\GitHub\Projects\portfoliosis-app\components\portfolio\ManualCreationWizard.tsx
-   rename c:\GitHub\Projects\portfoliosis-app\components\portfolio\ManualCreationWizard.fixed.tsx ManualCreationWizard.tsx
+   del c:\GitHub\Projects\portfoliosys-app\components\portfolio\ManualCreationWizard.tsx
+   rename c:\GitHub\Projects\portfoliosys-app\components\portfolio\ManualCreationWizard.fixed.tsx ManualCreationWizard.tsx
    ```
 
 2. **Integration:** Connect wizard to dashboard onboarding

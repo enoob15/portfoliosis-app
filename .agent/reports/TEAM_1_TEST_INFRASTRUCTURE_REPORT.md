@@ -1,5 +1,5 @@
 # Team 1 Report: Test Infrastructure Analysis
-## Portfoliosis App - Test Suite Status
+## Portfoliosys App - Test Suite Status
 
 **Team:** Test Infrastructure Engineer
 **Date:** 2026-01-26

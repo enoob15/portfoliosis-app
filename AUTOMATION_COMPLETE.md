@@ -1,4 +1,4 @@
-# Portfoliosis - Setup Automation Complete! 🤖
+# Portfoliosys - Setup Automation Complete! 🤖
 
 **Date:** January 11, 2026
 **Status:** ✅ Fully Automated Setup Ready
@@ -120,7 +120,7 @@ npm run test:supabase
 
 Sample output:
 ```
-✅ Environment file exists: C:\GitHub\portfoliosis-app\.env.local
+✅ Environment file exists: C:\GitHub\portfoliosys-app\.env.local
 ✅ NEXT_PUBLIC_SUPABASE_URL: https://xxxxx.supabase.co...
 ✅ NEXT_PUBLIC_SUPABASE_ANON_KEY: Set
 ✅ SUPABASE_SERVICE_ROLE_KEY: Set
@@ -141,7 +141,7 @@ Sample output:
 ## Files Created (Automation)
 
 ```
-portfoliosis-app/
+portfoliosys-app/
 ├── setup.bat                          # One-click Windows setup
 ├── QUICKSTART.md                      # Quick start guide
 ├── AUTOMATION_COMPLETE.md             # This file
@@ -340,7 +340,7 @@ portfoliosis-app/
 1. **QUICKSTART.md** - Quick start guide (automated setup)
 2. **AUTOMATION_COMPLETE.md** - This file (technical details)
 3. **SETUP_INSTRUCTIONS.md** - Detailed manual setup (still available)
-4. **PORTFOLIOSIS_WEEK_2-3_COMPLETE.md** - Project summary
+4. **PORTFOLIOSYS_WEEK_2-3_COMPLETE.md** - Project summary
 5. **README.md** - Updated with automation links
 
 ---

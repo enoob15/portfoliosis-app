@@ -20,7 +20,7 @@ This guide provides a quick reference for implementing the manual portfolio crea
 ## 📦 Install Dependencies
 
 ```bash
-cd c:\GitHub\Projects\portfoliosis-app
+cd c:\GitHub\Projects\portfoliosys-app
 
 # Install form handling and validation
 npm install react-hook-form zod @hookform/resolvers

@@ -55,7 +55,7 @@ components/
 
 ### 1. ImageUploader Component
 
-**Location:** `C:\GitHub\Projects\portfoliosis-app\components\portfolio\shared\ImageUploader.tsx`
+**Location:** `C:\GitHub\Projects\portfoliosys-app\components\portfolio\shared\ImageUploader.tsx`
 
 #### Features
 - Drag-and-drop interface (react-dropzone)
@@ -115,7 +115,7 @@ import { ImageUploader } from '@/components/portfolio/shared/ImageUploader';
 
 ### 2. useImageUpload Hook
 
-**Location:** `C:\GitHub\Projects\portfoliosis-app\hooks\useImageUpload.ts`
+**Location:** `C:\GitHub\Projects\portfoliosys-app\hooks\useImageUpload.ts`
 
 #### Features
 - Upload state management
@@ -171,7 +171,7 @@ const handleUpload = async (file: File) => {
 
 ### 3. Image Upload Utilities
 
-**Location:** `C:\GitHub\Projects\portfoliosis-app\lib\storage\image-upload.ts`
+**Location:** `C:\GitHub\Projects\portfoliosys-app\lib\storage\image-upload.ts`
 
 #### Functions
 
@@ -316,7 +316,7 @@ USING (
 
 ### Test Page
 
-**Location:** `C:\GitHub\Projects\portfoliosis-app\app\(dashboard)\dashboard\test-image-upload\page.tsx`
+**Location:** `C:\GitHub\Projects\portfoliosys-app\app\(dashboard)\dashboard\test-image-upload\page.tsx`
 
 **Access:** Navigate to `/dashboard/test-image-upload` while logged in.
 

@@ -365,7 +365,7 @@ All required variables configured in `.env.local`:
 **Developer**: Maya Patel
 **Role**: Web Development Division Lead
 **Reports To**: Devon Cross (CTO)
-**Project**: Portfoliosis Manual Portfolio Creation
+**Project**: Portfoliosys Manual Portfolio Creation
 
 **For Issues**:
 1. Check `PRODUCTION_DEPLOYMENT_REPORT.md` troubleshooting section

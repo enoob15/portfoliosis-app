@@ -5,7 +5,7 @@
 1. Go to https://platform.openai.com/api-keys
 2. Sign in or create account
 3. Click "Create new secret key"
-4. Name it "Portfoliosis Production"
+4. Name it "Portfoliosys Production"
 5. Copy the key (starts with `sk-proj-...`)
 
 ## Step 2: Add to Environment (1 minute)

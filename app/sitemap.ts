@@ -8,7 +8,7 @@ export default async function sitemap() {
         .select('slug, updated_at')
         .eq('status', 'published');
 
-    const baseUrl = 'https://portfoliosis.com'; // In real app, env var
+    const baseUrl = 'https://portfoliosys.com'; // In real app, env var
 
     const portfolioUrls = (portfolios || []).map((portfolio) => ({
         url: `${baseUrl}/p/${portfolio.slug}`,

@@ -6,19 +6,19 @@ Quick reference guide to all test files and their locations.
 
 ## Test Configuration Files
 
-### C:\GitHub\Projects\portfoliosis-app\jest.config.js
+### C:\GitHub\Projects\portfoliosys-app\jest.config.js
 Jest configuration with Next.js support
 - Module path mapping
 - Coverage thresholds (80%)
 - Test environment setup
 
-### C:\GitHub\Projects\portfoliosis-app\jest.setup.js
+### C:\GitHub\Projects\portfoliosys-app\jest.setup.js
 Global test setup
 - Testing Library imports
 - Next.js mocks (router, dynamic)
 - Global mocks (localStorage, matchMedia)
 
-### C:\GitHub\Projects\portfoliosis-app\scripts\setup-tests.js
+### C:\GitHub\Projects\portfoliosys-app\scripts\setup-tests.js
 Automated setup script
 - Adds test scripts to package.json
 - Adds test dependencies
@@ -28,7 +28,7 @@ Automated setup script
 
 ## Test Utility Files
 
-### C:\GitHub\Projects\portfoliosis-app\lib\__tests__\test-utils.tsx
+### C:\GitHub\Projects\portfoliosys-app\lib\__tests__\test-utils.tsx
 **Purpose:** Shared test utilities, mock data, and custom render
 **Exports:**
 - `mockUser` - Mock authenticated user
@@ -49,7 +49,7 @@ Automated setup script
 
 ## Context Tests
 
-### C:\GitHub\Projects\portfoliosis-app\contexts\__tests__\ManualPortfolioContext.test.tsx
+### C:\GitHub\Projects\portfoliosys-app\contexts\__tests__\ManualPortfolioContext.test.tsx
 **Tests:** 45+
 **Coverage:** 95%+
 **Testing:**
@@ -75,7 +75,7 @@ Automated setup script
 
 ## Hook Tests
 
-### C:\GitHub\Projects\portfoliosis-app\hooks\__tests__\useManualPortfolio.test.ts
+### C:\GitHub\Projects\portfoliosys-app\hooks\__tests__\useManualPortfolio.test.ts
 **Tests:** 35+
 **Coverage:** 90%+
 **Testing:**
@@ -97,7 +97,7 @@ Automated setup script
 ✓ Last Saved Timestamp (1 test)
 ```
 
-### C:\GitHub\Projects\portfoliosis-app\hooks\__tests__\useImageUpload.test.ts
+### C:\GitHub\Projects\portfoliosys-app\hooks\__tests__\useImageUpload.test.ts
 **Tests:** 45+
 **Coverage:** 90%+
 **Testing:**
@@ -118,7 +118,7 @@ Automated setup script
 ✓ Reset (1 test)
 ```
 
-### C:\GitHub\Projects\portfoliosis-app\hooks\__tests__\useAIAssist.test.ts
+### C:\GitHub\Projects\portfoliosys-app\hooks\__tests__\useAIAssist.test.ts
 **Tests:** 40+
 **Coverage:** 90%+
 **Testing:**
@@ -141,7 +141,7 @@ Automated setup script
 
 ## Component Tests
 
-### C:\GitHub\Projects\portfoliosis-app\components\portfolio\__tests__\ManualCreationWizard.test.tsx
+### C:\GitHub\Projects\portfoliosys-app\components\portfolio\__tests__\ManualCreationWizard.test.tsx
 **Tests:** 45+
 **Coverage:** 85%+
 **Testing:**
@@ -167,7 +167,7 @@ Automated setup script
 ✓ Button States (2 tests)
 ```
 
-### C:\GitHub\Projects\portfoliosis-app\components\portfolio\steps\__tests__\PersonalInfoStep.test.tsx
+### C:\GitHub\Projects\portfoliosys-app\components\portfolio\steps\__tests__\PersonalInfoStep.test.tsx
 **Tests:** 35+
 **Coverage:** 85%+
 **Testing:**
@@ -194,7 +194,7 @@ Automated setup script
 
 ## Documentation Files
 
-### C:\GitHub\Projects\portfoliosis-app\TEST_README.md
+### C:\GitHub\Projects\portfoliosys-app\TEST_README.md
 **Purpose:** Complete testing documentation
 **Contents:**
 - Setup instructions
@@ -205,7 +205,7 @@ Automated setup script
 - Coverage goals
 - CI/CD integration
 
-### C:\GitHub\Projects\portfoliosis-app\TEST_SUITE_REPORT.md
+### C:\GitHub\Projects\portfoliosys-app\TEST_SUITE_REPORT.md
 **Purpose:** Detailed implementation report
 **Contents:**
 - Test statistics
@@ -215,7 +215,7 @@ Automated setup script
 - Expected output
 - Recommendations
 
-### C:\GitHub\Projects\portfoliosis-app\QUICK_TEST_START.md
+### C:\GitHub\Projects\portfoliosys-app\QUICK_TEST_START.md
 **Purpose:** Quick start guide
 **Contents:**
 - 3-step setup
@@ -224,7 +224,7 @@ Automated setup script
 - Troubleshooting
 - Quick reference
 
-### C:\GitHub\Projects\portfoliosis-app\TESTING_COMPLETE.md
+### C:\GitHub\Projects\portfoliosys-app\TESTING_COMPLETE.md
 **Purpose:** Summary and completion status
 **Contents:**
 - Statistics
@@ -233,7 +233,7 @@ Automated setup script
 - Quick start
 - Success criteria
 
-### C:\GitHub\Projects\portfoliosis-app\TEST_FILES_INDEX.md
+### C:\GitHub\Projects\portfoliosys-app\TEST_FILES_INDEX.md
 **Purpose:** This file - index of all test files
 
 ---
@@ -241,7 +241,7 @@ Automated setup script
 ## Directory Structure
 
 ```
-C:\GitHub\Projects\portfoliosis-app\
+C:\GitHub\Projects\portfoliosys-app\
 │
 ├── jest.config.js                    # Jest configuration
 ├── jest.setup.js                     # Test setup

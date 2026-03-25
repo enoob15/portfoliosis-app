@@ -141,7 +141,7 @@ Test page available at: `/dashboard/test-image-upload` (requires authentication)
 
 ### Documentation
 
-Full documentation: `C:\GitHub\Projects\portfoliosis-app\docs\IMAGE_UPLOAD_INFRASTRUCTURE.md`
+Full documentation: `C:\GitHub\Projects\portfoliosys-app\docs\IMAGE_UPLOAD_INFRASTRUCTURE.md`
 
 ## Other Components
 

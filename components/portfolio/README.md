@@ -231,7 +231,7 @@ Configure in `contexts/ManualPortfolioContext.tsx`:
 const AUTO_SAVE_INTERVAL = 30000;
 
 // localStorage key
-const STORAGE_KEY = 'portfoliosis_manual_draft';
+const STORAGE_KEY = 'portfoliosys_manual_draft';
 ```
 
 ## Events
@@ -257,7 +257,7 @@ import { ManualCreationWizard } from './ManualCreationWizard';
 
 describe('ManualCreationWizard', () => {
   it('shows draft recovery dialog if draft exists', async () => {
-    localStorage.setItem('portfoliosis_manual_draft', JSON.stringify({
+    localStorage.setItem('portfoliosys_manual_draft', JSON.stringify({
       data: { personal: { name: 'John' } },
       timestamp: new Date().toISOString()
     }));
@@ -286,7 +286,7 @@ describe('ManualCreationWizard', () => {
 ## Troubleshooting
 
 ### Draft not recovering
-- Check browser localStorage for `portfoliosis_manual_draft`
+- Check browser localStorage for `portfoliosys_manual_draft`
 - Ensure data object is not empty
 - Check console for JSON parse errors
 
@@ -317,4 +317,4 @@ describe('ManualCreationWizard', () => {
 
 ## License
 
-Part of the Portfoliosis application.
+Part of the Portfoliosys application.

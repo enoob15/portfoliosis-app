@@ -1,4 +1,4 @@
-# Portfoliosis
+# Portfoliosys
 
 **Next-Generation AI Portfolio Builder**
 
@@ -60,7 +60,7 @@ npm run dev
 ```bash
 # Clone the repository
 git clone <repository-url>
-cd portfoliosis-app
+cd portfoliosys-app
 
 # Install dependencies
 npm install
@@ -113,7 +113,7 @@ Open [http://localhost:3000](http://localhost:3000) to see the application.
 ## Project Structure
 
 ```
-portfoliosis-app/
+portfoliosys-app/
 ├── app/                        # Next.js App Router
 │   ├── (auth)/                # Authentication routes
 │   │   ├── login/

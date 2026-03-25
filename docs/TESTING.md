@@ -1,8 +1,8 @@
-# Portfoliosis Testing Strategy
+# Portfoliosys Testing Strategy
 
 ## Overview
 
-Comprehensive testing strategy ensuring Portfoliosis delivers exceptional quality, performance, and reliability.
+Comprehensive testing strategy ensuring Portfoliosys delivers exceptional quality, performance, and reliability.
 
 **Testing Pyramid**:
 ```
@@ -667,7 +667,7 @@ export const options = {
 
 export default function () {
   // Test portfolio list endpoint
-  const res = http.get('https://portfoliosis.com/api/portfolios', {
+  const res = http.get('https://portfoliosys.com/api/portfolios', {
     headers: { Authorization: `Bearer ${__ENV.TEST_TOKEN}` },
   });
 
@@ -809,7 +809,7 @@ npx percy exec -- npx playwright test tests/visual
 ```bash
 # Run security scan
 docker run -t owasp/zap2docker-stable zap-baseline.py \
-  -t https://portfoliosis.com
+  -t https://portfoliosys.com
 ```
 
 ### Dependency Scanning

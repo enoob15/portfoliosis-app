@@ -1,4 +1,4 @@
-# Portfoliosis Deployment Guide
+# Portfoliosys Deployment Guide
 
 ## Table of Contents
 
@@ -25,8 +25,8 @@
 ### Setup
 ```bash
 # Clone repository
-git clone https://github.com/your-org/portfoliosis.git
-cd portfoliosis
+git clone https://github.com/your-org/portfoliosys.git
+cd portfoliosys
 
 # Install dependencies
 npm install
@@ -63,7 +63,7 @@ Every pull request automatically creates a preview deployment.
 git push origin feature/new-feature
 
 # GitHub Actions triggers Vercel preview build
-# Preview URL: https://portfoliosis-git-feature-new-feature.vercel.app
+# Preview URL: https://portfoliosys-git-feature-new-feature.vercel.app
 ```
 
 **Manual Preview**:
@@ -91,7 +91,7 @@ vercel
 **Prerequisites**:
 1. Vercel account connected to GitHub
 2. Production environment variables configured
-3. Custom domain configured (portfoliosis.com)
+3. Custom domain configured (portfoliosys.com)
 4. All tests passing
 
 **Deployment Process**:
@@ -124,7 +124,7 @@ vercel --prod
 - [ ] Security scan complete
 - [ ] Monitoring configured
 
-**Production URL**: `https://portfoliosis.com`
+**Production URL**: `https://portfoliosys.com`
 
 ---
 
@@ -243,7 +243,7 @@ GOOGLE_AI_API_KEY=...
 # Vercel Dashboard > Settings > Environment Variables
 # Scope: Preview
 
-NEXT_PUBLIC_APP_URL=https://portfoliosis-staging.vercel.app
+NEXT_PUBLIC_APP_URL=https://portfoliosys-staging.vercel.app
 NODE_ENV=staging
 SUPABASE_URL=https://staging-project.supabase.co
 # ... other staging credentials
@@ -254,7 +254,7 @@ SUPABASE_URL=https://staging-project.supabase.co
 # Vercel Dashboard > Settings > Environment Variables
 # Scope: Production
 
-NEXT_PUBLIC_APP_URL=https://portfoliosis.com
+NEXT_PUBLIC_APP_URL=https://portfoliosys.com
 NODE_ENV=production
 SUPABASE_URL=https://prod-project.supabase.co
 # ... other production credentials
@@ -450,7 +450,7 @@ Sentry.init({
 ### Uptime Monitoring
 
 **UptimeRobot** (free tier):
-- Monitor https://portfoliosis.com every 5 minutes
+- Monitor https://portfoliosys.com every 5 minutes
 - Alert if down for >2 minutes
 - Slack/email notifications
 
@@ -478,7 +478,7 @@ Sentry.init({
 
 ### User Portfolio Static Site Generation
 
-When a user deploys their portfolio, Portfoliosis:
+When a user deploys their portfolio, Portfoliosys:
 
 1. **Generate Static Site** (30s)
 2. **Optimize Assets** (10s)
@@ -715,8 +715,8 @@ AND state_change < NOW() - INTERVAL '5 minutes';
 ## Emergency Contacts
 
 **Critical Issues**:
-- Devon Cross (CTO): devon@portfoliosis.com
-- Maya Patel (Web Dev Lead): maya@portfoliosis.com
+- Devon Cross (CTO): devon@portfoliosys.com
+- Maya Patel (Web Dev Lead): maya@portfoliosys.com
 
 **Service Status**:
 - Vercel: status.vercel.com

@@ -116,7 +116,7 @@ Three comprehensive documentation files:
 ## File Structure
 
 ```
-portfoliosis-app/
+portfoliosys-app/
 ├── lib/
 │   ├── storage/
 │   │   └── image-upload.ts           ✅ Core utilities
@@ -409,18 +409,18 @@ Use the examples in `docs/IMAGE_UPLOAD_INTEGRATION_EXAMPLES.md` to integrate int
 ## Resources
 
 ### Documentation
-- **Full Documentation:** `C:\GitHub\Projects\portfoliosis-app\docs\IMAGE_UPLOAD_INFRASTRUCTURE.md`
-- **Integration Examples:** `C:\GitHub\Projects\portfoliosis-app\docs\IMAGE_UPLOAD_INTEGRATION_EXAMPLES.md`
-- **Component README:** `C:\GitHub\Projects\portfoliosis-app\components\portfolio\shared\README.md`
+- **Full Documentation:** `C:\GitHub\Projects\portfoliosys-app\docs\IMAGE_UPLOAD_INFRASTRUCTURE.md`
+- **Integration Examples:** `C:\GitHub\Projects\portfoliosys-app\docs\IMAGE_UPLOAD_INTEGRATION_EXAMPLES.md`
+- **Component README:** `C:\GitHub\Projects\portfoliosys-app\components\portfolio\shared\README.md`
 
 ### Source Files
-- **Utilities:** `C:\GitHub\Projects\portfoliosis-app\lib\storage\image-upload.ts`
-- **Hook:** `C:\GitHub\Projects\portfoliosis-app\hooks\useImageUpload.ts`
-- **Component:** `C:\GitHub\Projects\portfoliosis-app\components\portfolio\shared\ImageUploader.tsx`
-- **Test Page:** `C:\GitHub\Projects\portfoliosis-app\app\(dashboard)\dashboard\test-image-upload\page.tsx`
+- **Utilities:** `C:\GitHub\Projects\portfoliosys-app\lib\storage\image-upload.ts`
+- **Hook:** `C:\GitHub\Projects\portfoliosys-app\hooks\useImageUpload.ts`
+- **Component:** `C:\GitHub\Projects\portfoliosys-app\components\portfolio\shared\ImageUploader.tsx`
+- **Test Page:** `C:\GitHub\Projects\portfoliosys-app\app\(dashboard)\dashboard\test-image-upload\page.tsx`
 
 ### Handoff Document
-- **Main Handoff:** `C:\GitHub\Projects\portfoliosis-app\HANDOFF_MANUAL_CREATION.md`
+- **Main Handoff:** `C:\GitHub\Projects\portfoliosys-app\HANDOFF_MANUAL_CREATION.md`
 - **Image Upload Section:** Lines 410-422
 - **ImageUploader Spec:** Lines 328-346
 

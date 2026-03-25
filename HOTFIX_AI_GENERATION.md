@@ -78,10 +78,10 @@ const { data: created, error } = await supabase
 - **Status:** ✅ SUCCESS
 
 ### New Production URL
-**https://portfoliosis-jeokjj9al-boones-projects-4080c510.vercel.app**
+**https://portfoliosys-jeokjj9al-boones-projects-4080c510.vercel.app**
 
 ### Vercel Dashboard
-**Inspect:** https://vercel.com/boones-projects-4080c510/portfoliosis-app/9sJB9gufbaQMK81gercxbBpqxKBj
+**Inspect:** https://vercel.com/boones-projects-4080c510/portfoliosys-app/9sJB9gufbaQMK81gercxbBpqxKBj
 
 ---
 
@@ -128,7 +128,7 @@ To verify if your Anthropic key has credits:
 If Anthropic has no credits, you can add OpenAI:
 
 ### Option 1: Via Vercel Dashboard
-1. Go to: https://vercel.com/boones-projects-4080c510/portfoliosis-app/settings/environment-variables
+1. Go to: https://vercel.com/boones-projects-4080c510/portfoliosys-app/settings/environment-variables
 2. Add new variable:
    - **Name:** `OPENAI_API_KEY`
    - **Value:** `sk-...` (your OpenAI API key)
@@ -137,7 +137,7 @@ If Anthropic has no credits, you can add OpenAI:
 
 ### Option 2: Via CLI
 ```bash
-cd C:\GitHub\Projects\portfoliosis-app
+cd C:\GitHub\Projects\portfoliosys-app
 vercel env add OPENAI_API_KEY production
 # Enter your OpenAI API key when prompted
 vercel --prod --yes

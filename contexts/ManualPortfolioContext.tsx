@@ -5,7 +5,7 @@ import { ParsedResume } from '@/types/profile';
 
 // Auto-save interval (30 seconds)
 const AUTO_SAVE_INTERVAL = 30000;
-const STORAGE_KEY = 'portfoliosis_manual_draft';
+const STORAGE_KEY = 'portfoliosys_manual_draft';
 
 export type ManualPortfolioStep =
   | 'personal'

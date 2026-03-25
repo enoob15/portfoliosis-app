@@ -260,7 +260,7 @@ Note: Port 3000 was already in use, so the server is on port 3001.
 
 #### Core Components
 ```
-c:\GitHub\Projects\portfoliosis-app\
+c:\GitHub\Projects\portfoliosys-app\
 ├── app\(dashboard)\dashboard\
 │   ├── portfolios\new\page.tsx          # Main wizard page (UPDATED)
 │   └── test-image-upload\page.tsx       # Test page for image upload
@@ -480,8 +480,8 @@ app\(dashboard)\dashboard\portfolios\new\page.tsx  # REPLACED with wizard integr
 
 **Issue**: Draft recovery not appearing
 - Verify you saved data previously
-- Check localStorage has `portfoliosis_manual_draft` key
-- Clear localStorage if corrupted: `localStorage.removeItem('portfoliosis_manual_draft')`
+- Check localStorage has `portfoliosys_manual_draft` key
+- Clear localStorage if corrupted: `localStorage.removeItem('portfoliosys_manual_draft')`
 
 **Issue**: Navigation buttons disabled
 - Check form validation errors

@@ -21,7 +21,7 @@
 ## Migration Overview
 
 ### Purpose
-Add image storage capabilities to the Portfoliosis application, enabling users to upload profile and background images for their portfolios.
+Add image storage capabilities to the Portfoliosys application, enabling users to upload profile and background images for their portfolios.
 
 ### Changes Made
 
@@ -113,7 +113,7 @@ Add image storage capabilities to the Portfoliosis application, enabling users t
 
 1. Navigate to [https://supabase.com/dashboard](https://supabase.com/dashboard)
 2. Sign in with your account
-3. Select your **Portfoliosis** project
+3. Select your **Portfoliosys** project
 
 ![Screenshot: Supabase project selection screen with project list]
 
@@ -129,7 +129,7 @@ Add image storage capabilities to the Portfoliosis application, enabling users t
 
 1. Open the migration file on your local machine:
    ```
-   C:\GitHub\Projects\portfoliosis-app\supabase\migrations\20260126_portfolio_images.sql
+   C:\GitHub\Projects\portfoliosys-app\supabase\migrations\20260126_portfolio_images.sql
    ```
 
 2. Copy the entire contents of the file (Ctrl+A, Ctrl+C)
@@ -315,7 +315,7 @@ Consider rollback if:
 1. Open Supabase Dashboard → SQL Editor
 2. Open rollback file:
    ```
-   C:\GitHub\Projects\portfoliosis-app\supabase\migrations\20260126_portfolio_images_rollback.sql
+   C:\GitHub\Projects\portfoliosys-app\supabase\migrations\20260126_portfolio_images_rollback.sql
    ```
 3. Copy and paste the SQL into SQL Editor
 4. Click **RUN**

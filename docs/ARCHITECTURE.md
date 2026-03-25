@@ -1,7 +1,7 @@
-# Portfoliosis Architecture & Setup Guide
+# Portfoliosys Architecture & Setup Guide
 
 ## System Overview
-Portfoliosis is a web application that generates professional portfolios from resume files using AI. It is built with Next.js 14+, Supabase, and Tailwind CSS.
+Portfoliosys is a web application that generates professional portfolios from resume files using AI. It is built with Next.js 14+, Supabase, and Tailwind CSS.
 
 ### Core Tech Stack
 - **Framework**: Next.js 16 (App Router)

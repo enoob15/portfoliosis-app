@@ -2,7 +2,7 @@
 
 **Created:** January 25, 2026
 **Last Updated:** January 26, 2026
-**Project:** Portfoliosis
+**Project:** Portfoliosys
 **Feature:** Manual Portfolio Creation with AI Assistance & Image Upload
 **Status:** 65% Complete - Infrastructure Ready
 **Estimated Timeline:** 4 weeks (Week 1-3 mostly complete)  
@@ -900,7 +900,7 @@ describe('Manual Portfolio Creation E2E', () => {
 ### Installation Command
 
 ```bash
-cd c:\GitHub\Projects\portfoliosis-app
+cd c:\GitHub\Projects\portfoliosys-app
 npm install react-hook-form zod @hookform/resolvers react-image-crop react-dropzone date-fns react-hot-toast framer-motion
 ```
 
@@ -1097,8 +1097,8 @@ npm install react-hook-form zod @hookform/resolvers react-image-crop react-dropz
 ## Contact & Support
 
 **Project Lead:** Devon Cross (CTO)  
-**Project:** Portfoliosis  
-**Repository:** `c:\GitHub\Projects\portfoliosis-app`  
+**Project:** Portfoliosys  
+**Repository:** `c:\GitHub\Projects\portfoliosys-app`  
 **Documentation:** `docs/` directory  
 
 **For Questions:**

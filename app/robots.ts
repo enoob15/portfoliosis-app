@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
             allow: '/',
             disallow: '/dashboard/',
         },
-        sitemap: 'https://portfoliosis.com/sitemap.xml',
+        sitemap: 'https://portfoliosys.com/sitemap.xml',
     };
 }

@@ -9,7 +9,7 @@
 
 ## Executive Summary
 
-This document outlines the plan to implement a comprehensive manual portfolio creation feature for Portfoliosis. This feature will allow users to build their portfolio from scratch without needing to upload a resume, providing a guided, AI-assisted form experience with image upload capabilities.
+This document outlines the plan to implement a comprehensive manual portfolio creation feature for Portfoliosys. This feature will allow users to build their portfolio from scratch without needing to upload a resume, providing a guided, AI-assisted form experience with image upload capabilities.
 
 ---
 

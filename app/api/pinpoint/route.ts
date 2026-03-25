@@ -25,7 +25,7 @@ export async function POST(request: Request) {
       const { data: project } = await supabase
         .from('projects')
         .select('id')
-        .eq('api_key', body.projectId || 'portfoliosis')
+        .eq('api_key', body.projectId || 'portfoliosys')
         .single();
 
       if (project) {

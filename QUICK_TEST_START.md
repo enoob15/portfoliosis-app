@@ -95,7 +95,7 @@ Coverage: 88.3%
 ## Test Files Created
 
 ```
-C:\GitHub\Projects\portfoliosis-app\
+C:\GitHub\Projects\portfoliosys-app\
 ├── jest.config.js                          # Jest configuration
 ├── jest.setup.js                           # Test setup & mocks
 ├── TEST_README.md                          # Complete testing guide

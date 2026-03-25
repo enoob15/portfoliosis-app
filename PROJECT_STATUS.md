@@ -1,14 +1,14 @@
-# Portfoliosis - Project Status
+# Portfoliosys - Project Status
 
 **Last Updated:** January 24, 2026
 **Current Phase:** Phase 2 (AI Engine) - COMPLETED
-**Code Location:** `C:\GitHub\Projects\portfoliosis-app`
+**Code Location:** `C:\GitHub\Projects\portfoliosys-app`
 
 ---
 
 ## 🚦 Deployment Status
 
-**Domain:** `portfoliosis.boone51.com`
+**Domain:** `portfoliosys.boone51.com`
 **Provider:** Vercel (IP: 76.76.21.21)
 **Last Verification:** Jan 24, 2026
 **Current Status:** ✅ **LIVE** - Fully Accessible and Operational

@@ -1,6 +1,6 @@
-# Portfoliosis Setup Guide
+# Portfoliosys Setup Guide
 
-Complete development environment setup for Portfoliosis. Follow these steps to get your local environment running.
+Complete development environment setup for Portfoliosys. Follow these steps to get your local environment running.
 
 ## Prerequisites
 
@@ -44,8 +44,8 @@ Complete development environment setup for Portfoliosis. Follow these steps to g
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/boone51/portfoliosis.git
-cd portfoliosis
+git clone https://github.com/boone51/portfoliosys.git
+cd portfoliosys
 ```
 
 ### 2. Install Dependencies
@@ -84,7 +84,7 @@ Now edit `.env.local` with your actual API keys and configuration. See the **Req
 
 1. Go to [supabase.com](https://supabase.com) and create an account
 2. Create a new project:
-   - Project name: `portfoliosis-dev`
+   - Project name: `portfoliosys-dev`
    - Database password: Generate a strong password (save it!)
    - Region: Choose closest to your location
    - Wait 2-3 minutes for project initialization
@@ -116,7 +116,7 @@ Now edit `.env.local` with your actual API keys and configuration. See the **Req
    - Billing > Payment methods > Add card
 4. Create API key:
    - API keys > Create new secret key
-   - Name it `portfoliosis-dev`
+   - Name it `portfoliosys-dev`
    - Copy the key (you won't see it again!)
 
 5. Add to `.env.local`:
@@ -142,7 +142,7 @@ Now edit `.env.local` with your actual API keys and configuration. See the **Req
    - Settings > Billing > Add payment method
 4. Create API key:
    - Settings > API Keys > Create Key
-   - Name it `portfoliosis-dev`
+   - Name it `portfoliosys-dev`
    - Copy the key
 
 5. Add to `.env.local`:
@@ -189,7 +189,7 @@ Now edit `.env.local` with your actual API keys and configuration. See the **Req
 2. Sign up with GitHub
 3. Create database:
    - Click "Create Database"
-   - Name: `portfoliosis-cache`
+   - Name: `portfoliosys-cache`
    - Type: Regional
    - Region: Choose closest to your Vercel region
    - TLS: Enabled
@@ -216,7 +216,7 @@ Now edit `.env.local` with your actual API keys and configuration. See the **Req
 
 1. Go to [linkedin.com/developers](https://www.linkedin.com/developers)
 2. Create app:
-   - App name: `Portfoliosis Dev`
+   - App name: `Portfoliosys Dev`
    - LinkedIn Page: Your company page or personal
    - App logo: Upload any 300x300 image
 3. Get credentials:
@@ -246,7 +246,7 @@ Now edit `.env.local` with your actual API keys and configuration. See the **Req
 1. Go to GitHub Settings > Developer settings > OAuth Apps
 2. Click "New OAuth App"
 3. Fill in details:
-   - Application name: `Portfoliosis Dev`
+   - Application name: `Portfoliosys Dev`
    - Homepage URL: `http://localhost:3000`
    - Authorization callback URL: `http://localhost:3000/api/auth/oauth/github`
 4. Click "Register application"
@@ -272,7 +272,7 @@ Now edit `.env.local` with your actual API keys and configuration. See the **Req
 
 1. Go to [vercel.com/account/tokens](https://vercel.com/account/tokens)
 2. Create token:
-   - Name: `portfoliosis-deployments`
+   - Name: `portfoliosys-deployments`
    - Scope: Full Account
    - Expiration: No expiration (or 1 year)
 3. Copy token
@@ -288,7 +288,7 @@ Now edit `.env.local` with your actual API keys and configuration. See the **Req
 
 1. Go to [app.netlify.com/user/applications/personal](https://app.netlify.com/user/applications/personal)
 2. Create new access token
-3. Name: `portfoliosis-deployments`
+3. Name: `portfoliosys-deployments`
 4. Copy token
 
 5. Add to `.env.local`:

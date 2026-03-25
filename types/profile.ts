@@ -1,4 +1,4 @@
-// Core data types for Portfoliosis
+// Core data types for Portfoliosys
 
 export interface ContactInfo {
   name: string

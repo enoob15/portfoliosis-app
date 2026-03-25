@@ -1,10 +1,10 @@
-# Portfoliosis API Documentation
+# Portfoliosys API Documentation
 
 ## Overview
 
-Portfoliosis REST API provides endpoints for portfolio creation, AI enhancement, template management, and deployment. All endpoints follow RESTful conventions and return JSON responses.
+Portfoliosys REST API provides endpoints for portfolio creation, AI enhancement, template management, and deployment. All endpoints follow RESTful conventions and return JSON responses.
 
-**Base URL**: `https://portfoliosis.com/api` (production)
+**Base URL**: `https://portfoliosys.com/api` (production)
 **Base URL**: `http://localhost:3000/api` (development)
 
 ## Authentication

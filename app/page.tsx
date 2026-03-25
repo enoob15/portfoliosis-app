@@ -9,7 +9,7 @@ export default function Home() {
           <div className="w-8 h-8 rounded-lg bg-blue-600 flex items-center justify-center text-white">
             <Layout className="w-5 h-5" />
           </div>
-          Portfoliosis
+          Portfoliosys
         </div>
         <nav className="flex gap-4">
           <Link
@@ -97,7 +97,7 @@ export default function Home() {
       </main>
 
       <footer className="py-12 text-center text-slate-500 dark:text-slate-500 text-sm">
-        <p>© 2026 Portfoliosis. All rights reserved.</p>
+        <p>© 2026 Portfoliosys. All rights reserved.</p>
       </footer>
     </div>
   );

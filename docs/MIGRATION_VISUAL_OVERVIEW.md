@@ -6,7 +6,7 @@
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│                     PORTFOLIOSIS DATABASE                        │
+│                     PORTFOLIOSYS DATABASE                        │
 ├─────────────────────────────────────────────────────────────────┤
 │                                                                  │
 │  ┌──────────────────────────────────────────────────────────┐  │
@@ -255,7 +255,7 @@ TIME: <3s     ↓
 ## File Structure After Migration
 
 ```
-C:\GitHub\Projects\portfoliosis-app\
+C:\GitHub\Projects\portfoliosys-app\
 │
 ├── supabase/
 │   └── migrations/

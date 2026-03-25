@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Portfoliosis — AI-Powered Portfolio Builder",
+  title: "Portfoliosys — AI-Powered Portfolio Builder",
   description: "Drop your resume, get a stunning portfolio website in seconds.",
 };
 
